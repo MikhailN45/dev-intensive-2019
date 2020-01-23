@@ -18,9 +18,10 @@ object Utils {
     }
 
     fun toInitials(firstName: String?, lastName: String?): String? {
-        val nameFirstLetter: String? = firstName?.get(0)?.toUpperCase().toString()
-        val surnameFirstLetter: String? = lastName?.get(0)?.toUpperCase().toString()
-        return nameFirstLetter + surnameFirstLetter
+//        val nameFirstLetter: String? = firstName?.get(0)?.toUpperCase().toString()
+//        val surnameFirstLetter: String? = lastName?.get(0)?.toUpperCase().toString()
+//        return nameFirstLetter + surnameFirstLetter
+        return String()
     }
 
 }
