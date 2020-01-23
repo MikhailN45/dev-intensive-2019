@@ -10,5 +10,18 @@ object Utils {
         return firstName to lastName
     }
 
+    fun transliteration(payload: String, divider: String = " "): String {
+
+
+
+        return String()
+    }
+
+    fun toInitials(firstName: String?, lastName: String?): String? {
+        val nameFirstLetter: String? = firstName?.get(0)?.toUpperCase().toString()
+        val surnameFirstLetter: String? = lastName?.get(0)?.toUpperCase().toString()
+        return nameFirstLetter + surnameFirstLetter
+    }
+
 }
 
