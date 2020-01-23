@@ -10,13 +10,5 @@ object Utils {
         return firstName to lastName
     }
 
-    fun transliteration(payload: String, divider: String = " "): String {
-
-    }
-
-    fun toInitials(firstName: String?, lastName: String?): String? {
-
-    }
-
 }
 

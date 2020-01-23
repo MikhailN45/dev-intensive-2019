@@ -1,8 +1,6 @@
 package ru.skillbranch.devintensive.extensions
 
-import java.lang.IllegalStateException
 import java.util.*
-import java.util.concurrent.TimeUnit
 
 
 const val SECOND = 1000L
@@ -28,9 +26,6 @@ fun Date.add(value: Int, units: TimeUnits = TimeUnits.SECOND): Date {
     return this
 }
 
-fun Date.humanizeDiff(date: Date = Date()): String {
-
-}
 
 enum class TimeUnits {
     SECOND,
