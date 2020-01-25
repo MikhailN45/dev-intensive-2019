@@ -3,15 +3,20 @@ package ru.skillbranch.devintensive.utils
 import java.util.*
 
 object Utils {
-    fun parseFullName(fullName: String?): Pair<String?, String?> {
-        val name = fullName?.trim()
 
+    fun parseFullName(fullName: String?): Pair<String?, String?>? {
+        val name = fullName?.trim()
         if (name == null || name.isEmpty()) {
             return Pair(null, null)
         }
-
         val parts = name.split(" ")
         return Pair(parts.getOrNull(0), parts.getOrNull(1))
+    }
+
+    fun toInitials(firstName: String?, lastName: String?): String? {
+        val f = firstName?.trim()?.getOrNull(0)?.toUpperCase()
+        val l = lastName?.trim()?.getOrNull(0)?.toUpperCase()
+        return if (f != null && l != null) "$f$l" else if (f != null) "$f" else if (l != null) "$l" else null
     }
 
     fun transliteration(payload: String, divider: String = " "): String {
@@ -51,7 +56,6 @@ object Utils {
             "ю" to "yu",
             "я" to "ya"
         )
-
         return buildString {
             for (char in string) {
                 val res = when {
@@ -63,18 +67,7 @@ object Utils {
                 else
                     append(char)
             }
-
         }
     }
 
-    fun toInitials(firstName: String?, lastName: String?): String? {
-        val nameFirstLetter = firstName?.trim()?.getOrNull(0)?.toUpperCase()
-        val surnameFirstLetter = lastName?.getOrNull(0)?.toUpperCase()
-        return if (nameFirstLetter != null && surnameFirstLetter != null) "$nameFirstLetter$surnameFirstLetter"
-        else if (nameFirstLetter != null) "$nameFirstLetter"
-        else if (surnameFirstLetter != null) "$surnameFirstLetter"
-        else null
-    }
-
 }
-
