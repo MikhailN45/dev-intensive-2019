@@ -97,7 +97,7 @@ class ProfileActivity : AppCompatActivity() {
             viewModel.switchTheme()
         }
 
-        et_repository.addTextChangedListener(object : TextWatcher {
+        /*et_repository.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(p0: Editable?) {
             }
 
@@ -152,8 +152,8 @@ class ProfileActivity : AppCompatActivity() {
             }
             return false
         }
+    }*/
     }
-
     private fun showCurrentMode(isEdit: Boolean) {
         val info = viewFields.filter {
             setOf(

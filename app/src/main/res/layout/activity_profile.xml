@@ -159,8 +159,8 @@
             android:id="@+id/wr_first_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/spacing_normal_16"
-            android:layout_toRightOf="@id/ic_avatar">
+            android:layout_marginStart="@dimen/spacing_normal_16"
+            android:layout_toEndOf="@id/ic_avatar">
 
             <EditText
                 android:id="@+id/et_first_name"
@@ -176,8 +176,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/wr_first_name"
-            android:layout_marginLeft="@dimen/spacing_normal_16"
-            android:layout_toRightOf="@id/ic_avatar">
+            android:layout_marginStart="@dimen/spacing_normal_16"
+            android:layout_toEndOf="@id/ic_avatar">
 
             <EditText
                 android:id="@+id/et_last_name"
@@ -193,7 +193,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginLeft="@dimen/space_maximum_72"
+        android:layout_marginStart="@dimen/space_maximum_72"
         android:background="?attr/colorDivider" />
 
     <LinearLayout
@@ -211,7 +211,7 @@
             android:id="@+id/wr_about"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/spacing_normal_16"
+            android:layout_marginStart="@dimen/spacing_normal_16"
             app:counterMaxLength="128">
 
             <EditText
@@ -226,7 +226,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginLeft="@dimen/space_maximum_72"
+        android:layout_marginStart="@dimen/space_maximum_72"
         android:background="?attr/colorDivider" />
 
     <LinearLayout
@@ -244,7 +244,7 @@
             android:id="@+id/wr_repository"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/spacing_normal_16"
+            android:layout_marginStart="@dimen/spacing_normal_16"
             android:layout_weight="1">
 
             <EditText
@@ -263,6 +263,6 @@
             android:layout_height="24dp"
             android:layout_gravity="center_vertical"
             android:src="@drawable/ic_eye_24dp"
-            android:layout_marginLeft="@dimen/spacing_normal_16" />
+            android:layout_marginStart="@dimen/spacing_normal_16" />
     </LinearLayout>
 </LinearLayout>
